@@ -30,17 +30,3 @@ ALTER TABLE project
 ADD CONSTRAINT client_id_fk
 FOREIGN KEY(client_id)
 REFERENCES client(id);
-
-
---примечания
--- удалить таблицу
-DROP TABLE worker
-
--- чекнуть таблиуц
-SELECT * FROM worker
-
---добавить в таблицу
-INSERT INTO worker (name, birthday, level, salary) VALUES ('X', '2000-05-12', 'Junior', 1000)
-
---проверить колонки
-show columns from project
